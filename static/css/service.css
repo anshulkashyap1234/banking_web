@@ -1,0 +1,131 @@
+
+body{
+    width: 100%;
+    height: 300vh;
+}
+        .section {
+            overflow-wrap: normal;
+            position: absolute;
+            top: 80px;
+            left: 0;
+            right: 0;
+          
+
+           
+            width: 90%;
+            height: 100%;
+
+            padding: .2rem 5%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .container {
+            
+            background-color: rgb(138, 184, 225);
+            box-shadow: 12px 16px 16px 12px rgb(0 0 0 / 20%);
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            height: 100%;
+        }
+
+        .content {
+            width: 600px;
+            height: 300px;
+            overflow-wrap: normal;
+            background-color: white;
+            margin: 12px;
+            display: flex;
+            justify-content: center;
+            
+            font-size: 1.5em;
+            padding: 12px;
+
+            border-radius: 15px;
+          
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            gap: .5rem;
+            
+            overflow: hidden;
+            align-items: center;
+        }
+
+
+
+
+
+
+        .content.content1 {
+            flex: 1 1 4rem;
+            padding-top: 1rem;
+            z-index: 1;
+            margin-left: 2rem;
+           
+        }
+
+        .content .image {
+            flex: 1 1 4rem;
+            z-index: 1;
+           
+        }
+
+        .content .image img {
+            width: 90%;
+            margin-left: 3rem;
+
+        }
+
+
+
+
+        .content .content1 h2 {
+            font-size: 2.7rem;
+            font-weight: 800;
+            color: #002057;
+        }
+
+
+
+        .content .content1 p {
+            font-size: 1.2rem;
+            color: #000;
+            font-weight: 600;
+            padding: 1rem 0;
+        }
+
+.content:hover{
+    box-shadow: 0 16px 16px 0 rgb(0 0 0 / 20%);
+    cursor: pointer;
+}
+.content:hover .content1 h2{
+    
+   color: rgb(36, 36, 31);
+}
+.content:hover .content1 p{
+    color: #002057;
+    
+}
+
+ .content:hover .i--1:after{
+    content:'made easy to send and recive money with mobile banking';
+}
+.content:hover .i--2:after{
+    content:'0% interest on personal loan with 100% suritity of trust';
+}
+.content:hover .i--3:after{
+    content:'0% interest on vechile loan with 100% suritity of trust';
+}
+.content:hover .i--4:after{
+    content:'made easy to check account detail ';
+}
+.content:hover .i--5:after{
+    content:'deposite money any time ';
+}
+.content:hover .i--6:after{
+    content:'easy to apply credit card and debit card ';
+}

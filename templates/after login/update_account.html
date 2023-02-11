@@ -1,0 +1,163 @@
+
+
+<style>
+  
+
+
+            form * {
+                font-family: 'Poppins', sans-serif;
+                color: #050d1c;
+                letter-spacing: 0.5px;
+                outline: none;
+                border: none;
+            }
+
+            form h3 {
+                font-size: 42px;
+                font-weight: 500;
+                line-height: 42px;
+                text-align: center;
+                font-family: 'poppines';
+            }
+
+            label {
+                display: block;
+                margin-top: 30px;
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            input {
+                display: block;
+                height: 50px;
+                width: 100%;
+                background-color: rgba(152, 167, 186, 0.516);
+                border-radius: 3px;
+                padding: 0 10px;
+                margin-top: 8px;
+                font-size: 14px;
+                font-weight: 300;
+            }
+
+            ::placeholder {
+                color: black;
+            }
+
+            .button {
+                margin-top: 50px;
+                width: 100%;
+                height: 60px;
+                background: #4787e9;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 12px 40px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 0px #1e56f1;
+    transition: .3s ease;
+    border: none;
+    font-family: 'Poppins';
+
+            }
+.button:hover{
+    background: #3c7ad8;
+    box-shadow: 0px 3px 0px #1e56f1;
+    cursor: pointer;
+    transform: scale(0.95);
+            
+}
+
+.button:active {
+    transform: scale(0.9);
+}
+.user_content{
+    display: grid;
+                grid-template-rows: 10px 10px;
+                grid-template-columns: 330px 330px 300px;
+                grid-auto-flow: row;
+                grid-area: auto;
+                grid-gap: 80px;
+                height: max-content;
+}
+</style>
+
+<body>
+    <div>
+        {% extends 'userpage.html'%}
+    </div>
+
+
+
+    {%block content%}
+    <div class="projects-section-header">
+     
+
+        <h2>welcome🙏 <span class="name_user" name="user_name">{{username}} </span> this is updata details page
+        </h2>
+       
+            <p>{{error}}</p>
+        
+    </div>
+
+    <div class="project-boxes jsGridViewofprograms" id="load_home">
+        <form action="/update_data" method="post">
+                <div class="user_content">
+
+                    <div>
+
+                        <label for="username">username</label>
+                        <input type="text" placeholder="Username" id="username" name="username" value="{{username}}">
+                    </div>
+                    <div>
+
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Password" id="password" name="password" value="{{password}}">
+                    </div>
+                    <div>
+
+                        <label for="dob">date of birth</label>
+                        <input type="date" placeholder="date of birth" id="dob" name="dob" name="dob" value="{{dob}}">
+                    </div>
+
+
+                    <div>
+
+                        <label for="email">email</label>
+                        <input type="text" placeholder="Email " id="email" name="email" value="{{email}}">
+                    </div>
+                    <div>
+                        <label for="contact no">contact no</label>
+                        <input type="number" placeholder="contact no " id="contact no" name="contact_no"  value="{{contact}}">
+                    </div>
+                    <div>
+                        
+                    </div>
+
+
+
+
+
+
+                   
+
+
+
+
+                    <input type="submit" value="Create Account" class="button">
+                  
+
+
+                </div>
+
+
+            </form>
+
+        </div>
+        {%endblock%}
+
+
+
+
+</body>
+
+</html>

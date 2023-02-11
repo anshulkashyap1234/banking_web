@@ -1,0 +1,184 @@
+<title>login/signup</title>
+
+<style>
+    body {
+
+width: 100%;
+min-width: 1000px;
+height: auto;
+
+font-family: "Poppins", sans-serif;
+}
+
+
+
+.bg_image {
+/* The image used */
+
+/* Full height */
+height: 100vh;
+
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: repeat-x;
+background-size: cover;
+}
+
+
+
+
+    form {
+                
+                background-color: rgba(38, 104, 146, 0.13);
+                position: absolute;
+                transform: translate(-50%, -50%);
+                top: 52%;
+                left: 50%;
+                border-radius: 10px;
+                width: 500px;
+                height:fit-content;
+                padding-left: 20px  ;
+                padding-right: 20px  ;
+                border: 2px solid rgba(255, 255, 255, 0.1);
+                box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+               
+            
+            }
+            
+         
+            
+            form h3 {
+                margin-top: 0pc;
+                font-size: 22px;
+                font-weight: 600;
+                line-height: 42px;
+                text-align: center;
+                font-family: 'poppines';
+            }
+        
+        
+          
+            
+            .button {
+                
+                width: 15%;
+                height: 20px;
+                background-color: rgba(152, 167, 186, 0.516);
+                color: #080710;
+                padding: 15px 0;
+                font-size: 18px;
+                font-weight: 600;
+                border-radius: 5px;
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            background-color:rgb(32, 76, 194);
+            position: absolute;
+            bottom: 30px;
+           
+            
+            }
+            .button:hover{
+            color: #e8ecf3;
+                background-color: rgb(6, 49, 109);
+            cursor: pointer;
+            }
+        
+            .usercontainer {
+              display: grid;
+              grid-template-rows: auto auto auto;
+               
+            }
+            .button a{ color: white;
+                text-decoration: none;
+
+            }
+            
+            
+            .header{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+         
+</style>
+</head>
+
+<body>
+    <div>
+
+        {% include 'navbar.html'%}
+    </div>
+
+    {% block content%}
+
+    <div class="bg_image" style="background-image: url({{url_for('static',filename = '/image/loginandsignup.jpg')}});">
+    </div>
+
+
+
+    <div class="usercontainer">
+
+
+        <form>
+            
+
+                <h3>Login Page</h3>
+               
+            
+
+         
+
+
+            <div class="mainiterms">
+                <h2>account no :-{{account_no}} </h2>
+          <br>
+          <h2>username :- {{username}}</h2>
+          <br>
+          <h2>password :-{{password}} </h2>
+
+          <br>
+          <h2>email id :-{{email}} </h2>
+          <br>
+          <h2>contact :- {{contact}}</h2>
+          <br>
+          <h2>gender :- {{gender}}</h2>
+          <br>
+          <h2>dob :- {{dob}}</h2>
+          <br>
+          <h2>account_type :- {{account_type}}</h2>
+          <br>
+          <h2>account_bal :- {{account_bal}}</h2>
+
+            
+          
+        </div>
+    </form>
+    
+
+        <div class="button" style="right: 30%;"  >
+            
+            <a href="/loginpage" >
+                loginup
+                
+            </a>
+            
+        </div>
+        <div class="button" style="left: 30%;" >
+            
+            <a href="{{url_for('download_file')}}"  download="{{account_no,username}}">
+                download
+                
+            </a>
+            
+        
+    </div>
+    </div>
+
+    {%endblock%}
+    
+</body>

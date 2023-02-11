@@ -1,0 +1,13 @@
+
+            **********sbi bank***************
+            account_no->3
+            username->noni
+            password->nnn
+            email->chiky@gmail.com
+            contact->78794654
+            dob->2023-01-24
+            gender->female
+            account_type->current
+            account_bal->2000
+            ********************************
+            

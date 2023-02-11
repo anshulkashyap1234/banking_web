@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+        .header{
+         position: absolute;
+         top: 70px;
+         left: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3.5rem;
+            font-weight: 600;
+            color: rgb(29, 53, 83);
+            font-family: nunito;
+          
+        }
+        
+
+
+.helpcontainers{
+   
+    
+    width: 100%;
+    height: 40px;
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+    gap: 30px;
+   
+}
+.helpcontainers a{
+    border: 2px solid;
+    font-family: "Poppins";
+   
+
+    display: flex;
+    
+    flex: 0 0 190px; 
+
+font-size: 1.5rem;
+justify-content: center;
+text-decoration: none;
+align-items: center;
+border-radius: 20px;
+color: white;
+height: 70px;
+width: 190px;
+box-shadow: 0px 10px 20px  rgb(61, 76, 102);
+background-color: rgb(55, 90, 120);
+}
+.helpcontainers a:hover{
+    background-color: white;
+color: rgb(72, 119, 159);
+box-shadow: 0px 10px 20px  rgb(49, 107, 206);
+   
+}
+.helpsearch{
+    
+  
+    display: flex;
+            
+            font-size: 3.5rem;
+            font-weight: 600;
+            color: rgb(29, 53, 83);
+            font-family: nunito;
+           flex-direction: column;
+    
+}
+.helpsearch form{
+    position: absolute;
+    top: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    width: 100%;
+}
+#help{
+    width: 30%;
+    height: 40px;
+   
+ 
+}
+
+
+.button {
+                top: -1;
+                width: 52px;
+                height: 40px;
+                background: #4787e9;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 12px 40px;
+    
+    box-shadow: 0px 5px 0px #1e56f1;
+    transition: .3s ease;
+border: none;
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: center;
+
+            }
+.button:hover{
+    background: #3c7ad8;
+    box-shadow: 0px 3px 0px #1e56f1;
+    cursor: pointer;
+    transform: scale(0.95);
+            
+}
+
+.button:active {
+    transform: scale(0.9);
+}
+.container{
+    position: absolute;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  
+}
+.container div{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+    </style>
+</head>
+<body>
+    <div>
+
+        {% extends 'userpage.html'%}
+        
+    </div>
+
+{% block container%}
+<div class="container">
+
+    <div class="header">
+        
+        <h1>how con i help you</h1>
+    </div>
+    <div class="helpcontainers">
+        
+        {% for i in data%}
+        
+        <a href="">{{i}}</a>
+        
+        {%endfor%}
+    </div>
+    
+    <div class="helpsearch">
+        <form action="" class="helpform">
+            <input type="text" placeholder="how con i help you" name="help" id="help" >
+            <input type="submit" value="search" class="button">
+        </form>
+    </div>
+</div>
+{% endblock%}
+
+</body>
+</html>

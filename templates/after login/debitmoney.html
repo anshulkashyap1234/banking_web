@@ -1,0 +1,117 @@
+
+
+<style>
+   
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+   
+input {
+    display: block;
+    height: 40px;
+    width: 80%;
+    background-color: rgba(152, 167, 186, 0.516);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+::placeholder {
+    color: black;
+}
+
+.button {
+    margin-top: 10px;
+    width: 90%;
+    height: 50px;
+    background: #4787e9;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 12px  150px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 0px #1e56f1;
+    transition: .3s ease;
+    border: none;
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: center;
+
+}
+.button:hover{
+    background: #3c7ad8;
+    box-shadow: 0px 3px 0px #1e56f1;
+    cursor: pointer;
+    transform: scale(0.95);
+}
+
+.button:active {
+    transform: scale(0.9);
+}
+#load_home{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+#load_home div{
+    display: flex;
+    flex-direction: row;
+}
+.image img{
+   position: relative;
+   top: 3%;
+    
+
+}
+</style>
+
+<body>
+   <div>
+    {% extends 'userpage.html'%}
+   </div>
+  
+       
+       
+                    {%block content%}
+                    <h2>welcome🙏 <span class="name_user" name="user_name">{{username}} </span> this is debit money  page
+                    </h2>
+                    <p>{{error}}</p>
+                    <div class="projects-section-header">
+
+                       
+                        <div>
+                        </div>
+                    </div>
+
+                    <div class="project-boxes jsGridViewofprograms" id="load_home">
+                        <div class="user_content">
+
+                            <form action="/debit" method="post">
+                            
+                              
+                                
+                              
+                                <label for="amount">amount</label>
+                                <input type="number" placeholder="enter  amount" id="amount" name="ammount" value="0"><br><br>
+                                <input type="submit" value="Submit" class="button">
+                            </form>
+
+
+                        </div>
+                        <div class="image">
+                           <img src="{{url_for('static',filename='/image/debitmmoney.png')}}" alt="" width="390px">
+                        </div>
+                    </div>
+{%endblock%}
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+
+ 
+    <title>bank of india</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/homepage.css') }}">
+    
+</head>
+
+<body>
+    <div>
+        {%include 'navbar.html'%}
+    </div>
+<div>
+    {%block content%}
+ 
+    <section class="home" id="home">
+
+
+        <div class="content">
+            <p> <span> the world together <br> with innovative payment experiences </span></p>
+            <h2>How easily can i make <br>
+                Payments</h2>
+            <p>mabile transition are driving the growth <br> of the banking sector as you read this. We enables digital
+                payments to serve payment <br> needs of tomorrow,today.</p>
+            <a href="/loginpage" class="btn1" target="_self">login in
+                <i class="fas fa-arrow-circle-down"></i>
+            </a>
+
+
+        </div>
+        <div class="image">
+            <img class="tilt" src="{{ url_for('static', filename='/image/20944139.jpg')}}" alt="">
+        </div>
+    </section>
+    {%endblock%}
+</div>
+</body>
+

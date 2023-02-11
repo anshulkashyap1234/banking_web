@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="icon" href="{{url_for('static',filename='/image/institute-1.1s-200px.png')}}">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
+
+
+
+
+<body>
+
+    <header>
+        <a href="/" class="logo"><i class="fas fa-university"></i> bank of india </a>
+
+        <nav class="navbar">
+
+            <a href="/userpage" class="active" target="_parent">Home</a>
+
+            <a href="/servicesforuser" target="_self">Services</a>
+            <a href="/contactforuser" target="_self">Contact Us</a>
+            <a href="/helpforuser" target="_self">help</a>
+
+
+            <a href="/logout">logout</a>
+            <a href="/profile">
+
+                <button class="profile-btn">
+                    <img src="{{url_for('static',filename='/image/Screenshot_20210923-213001_Gallery.jpg')}}" />
+                    <span>{{username}}</span>
+                </button>
+            </a>
+        </nav>
+
+    </header>
+    {%block container%}
+
+    <div class="container">
+
+        <div class="app-content">
+            <div class="app-container">
+
+                <div class="app-content">
+                    <div class="app-sidebar">
+                        <a href="/userpage">home</a>
+
+                        <a href="/debitmoney">Debit</a>
+                        <a href="/creditmoney">Widrow</a>
+                        <a href="/check_balance">Check Balance</a>
+                        <a href="/transfermoney">Transfer</a>
+                        <a href="/transaction_history">Transaction history</a>
+                        <a href="/update_account">Update Account</a>
+                    </div>
+                    <div class="projects-section">
+                        {% block content%}
+                        <div class="projects-section-header">
+
+
+                            <h2>welcome🙏 <span class="name_user" name="user_name">{{username}} </span> to sbi bank
+
+                        </div>
+
+
+                        <div class="project-boxes jsGridViewofprograms" id="load_home" style="overflow: auto; padding:50px 50px;display: flex;flex-direction: column;">
+                            <div class="containers">
+                                <div class="card">
+                                    <div class="face face1">
+                                        <div class="content">
+                                            <img class="tilt"
+                                                src="{{url_for('static',filename='/image/money-transfer.png')}}" alt="">
+
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <p>money transfer is one of the most common features of the Paytm payments
+                                                app.
+                                            </p>
+                                            <a href="#">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="face face1">
+                                        <div class="content">
+                                            <img class="tilt" src="{{url_for('static',filename='/image/card.png')}}"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <p>Paytm Wallet is one of the most common features of the Paytm payments
+                                                app.
+                                            </p>
+                                            <a href="#">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="face face1">
+                                        <div class="content">
+                                            <img src="{{url_for('static',filename='/image/loan.png')}}">
+
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <p>loan is one of the most common features of the Paytm payments app.
+                                            </p>
+                                            <a href="#">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="containers">
+                                <div class="card">
+                                    <div class="face face1">
+                                        <div class="content">
+                                            <img class="tilt"
+                                                src="{{url_for('static',filename='/image/money-transfer.png')}}" alt="">
+
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <p>money transfer is one of the most common features of the Paytm payments
+                                                app.
+                                            </p>
+                                            <a href="#">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="face face1">
+                                        <div class="content">
+                                            <img class="tilt" src="{{url_for('static',filename='/image/card.png')}}"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <p>Paytm Wallet is one of the most common features of the Paytm payments
+                                                app.
+                                            </p>
+                                            <a href="#">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="face face1">
+                                        <div class="content">
+                                            <img src="{{url_for('static',filename='/image/loan.png')}}">
+
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <p>loan is one of the most common features of the Paytm payments app.
+                                            </p>
+                                            <a href="#">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        {% endblock%}
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    {%endblock%}
+
+
+
+
+</body>
+
+</html>

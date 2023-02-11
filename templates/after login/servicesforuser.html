@@ -1,0 +1,92 @@
+
+    
+    <title>services</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='/css/service.css')}}">
+
+</head>
+
+<body>
+    <div>
+        
+        {% extends 'userpage.html'%}
+    </div>
+    {%block container%}
+    <div class="section">
+        <div class="container">
+            <div  class="content">
+                <div class="content1">
+
+                    <h2>Internet/Mobile banking</h2>
+                    <p class="i--1">here you will tranfer money to mobile number <br></p>
+
+                </div>
+                <div class="image">
+                    <img class="tilt" src="{{url_for('static',filename='/image/moneytransfer.jpg')}}" alt="">
+                </div>
+
+            </div>
+            <div class="content">
+                <div class="content1">
+
+                    <h2>Personal Loan</h2>
+                    <p class="i--2">here you will get Personal Loan <br></p>
+
+                </div>
+                <div class="image">
+                    <img class="tilt" src="{{url_for('static',filename='/image/personalloan.jpg')}}" alt="">
+                </div>
+
+            </div>
+            <div class="content">
+                <div class="content1">
+
+                    <h2>Vehicle  Loan  <br>   <br>   </h2>
+                    <p class="i--3">here you will get Vehicle Loan <br></p>
+
+                </div>
+                <div class="image">
+                    <img class="tilt" src="{{url_for('static',filename='/image/car-finance-concept-illustration_114360-8058.webp')}}" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <div class="content1">
+
+                    <h2>Saving/Current Account</h2>
+                    <p class="i--4">Know about your account <br></p>
+
+                </div>
+                <div class="image">
+                    <img class="tilt" src="{{url_for('static',filename='/image/mobile-banking-modern-flat-concept-for-web-banner-design-man-uses-bank-services-to-manage-money-budget-and-accumulate-savings-in-personal-account-illustration-with-isolated-people-scene-free-vec.webp')}}" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <div class="content1">
+
+                    <h2>Fixed Deposite</h2>
+                    <p class="i--5"> </p>
+
+                </div>
+                <div class="image">
+                    <img class="tilt" src="{{url_for('static',filename='/image/20944139.jpg')}}" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <div class="content1">
+
+                    <h2>Credit/Debit Card</h2>
+                    <p class="i--6">Apply for credit and debit card <br> </p>
+
+                </div>
+                <div class="image">
+                    <img class="tilt" src="{{url_for('static',filename='/image/bank-account-concept-vector-illustration-credit-card-security-protecting-financial-savings-monthly-pay-salary-budget-personal-155693372.jpg')}}" alt="">
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    {%endblock%}
+</body>
+
+</html>

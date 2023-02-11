@@ -1,0 +1,13 @@
+
+            **********sbi bank***************
+            account_no->1
+            username->kaka
+            password->aaa
+            email->kaka@gmail.com
+            contact->9456954582
+            dob->2002-11-08
+            gender->male
+            account_type->current
+            account_bal->2000
+            ********************************
+            

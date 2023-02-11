@@ -1,0 +1,171 @@
+body {
+
+    width: 100%;
+    min-width: 1000px;
+    height: auto;
+
+    font-family: "Poppins", sans-serif;
+}
+
+
+    
+.bg_image {
+    /* The image used */
+    
+    /* Full height */
+    height: 100vh;
+
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+form {
+                
+    background-color: rgba(38, 104, 146, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 52%;
+    left: 50%;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+
+}
+
+form * {
+    font-family: 'Poppins', sans-serif;
+    color: #050d1c;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+form h3 {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: center;
+    font-family: 'poppines';
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(152, 167, 186, 0.516);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+::placeholder {
+    color: black;
+}
+
+.button {
+    margin-top: 20px;
+    width: 100%;
+    height: 60px;
+    background: #4787e9;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 12px 140px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 0px #1e56f1;
+    transition: .3s ease;
+    border: none;
+    font-family: 'Poppins';
+
+}
+.button:hover{
+    background: #3c7ad8;
+    box-shadow: 0px 3px 0px #1e56f1;
+    cursor: pointer;
+    transform: scale(0.95);
+}
+
+.button:active {
+    transform: scale(0.9);
+}
+.social {
+    margin-top: 50px;
+    display: flex;
+
+}
+
+.social div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(16, 7, 7);
+    width: 50%;
+    height: 40px;
+font-size: 15px;
+    border-radius: 3px;
+    padding: 5px 10px 10px 5px;
+    background-color:rgb(32, 76, 194);
+    color: #eaf0fb;
+    text-align: center;
+}
+
+.social div:hover {
+    color: #eaf0fb;
+    background-color: rgb(6, 49, 109);
+cursor: pointer;
+
+}
+
+.social .fb {
+    margin-left: 25px;
+}
+
+.social i {
+    margin-right: 4px;
+}
+
+.usercontainer {
+  
+    display: grid;
+    grid-gap: 1px;
+    grid-template-rows: 10px 10px 10px;
+    grid-column: auto;
+}
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.create_account{
+    color: red;
+    font-size: 13px;
+
+}

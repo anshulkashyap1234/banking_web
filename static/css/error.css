@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+body {
+    width: 99%;
+    height: 100vh;
+
+
+}
+
+.container {
+    position: relative;
+   
+    width: 100%;
+    height: 90vh;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    width: 50%;
+    height: 80vh;
+    border: 4px solid rgba(26, 24, 24, 0.705);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   overflow: hidden;
+border-radius: 40px;
+box-shadow: 10px 10px 10px 14px rgba(64, 75, 87, 0.3);
+}
+.item img{
+width: 70%;
+height: 80vh;
+
+}
+
+.item h3{
+    position: relative;
+    bottom: 60px;
+    
+
+}
+.back{
+    position: relative;
+    width: 90px;
+    height: 30px;
+    background-color: rgb(69, 69, 138);
+    color: white;
+    bottom: 70px;
+    border-radius: 30px;
+ 
+
+}
+.back:hover{
+    cursor: pointer;
+background-color: rgb(60, 60, 165);
+color: rgb(225, 255, 0);
+}

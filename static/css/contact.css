@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+
+
+html {
+    font-size: 62.5%;
+  
+
+}
+
+body {
+    
+width:100%;
+min-width:1000px;
+height:auto;
+
+    font-family: "Poppins", sans-serif;
+}
+
+.section {
+    overflow-wrap: normal;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+
+    z-index: 1;
+    width: 90%;
+  
+    padding: .2rem 5%;
+   flex-wrap: wrap;
+    display: flex;
+    align-content: center;
+
+    justify-content: center;
+
+}
+
+.container_login {
+   
+background-color: rgba(232, 217, 217, 0.4); /* Black w/opacity/see-through */
+    margin-top: 20px;
+    border: 2px solid;
+    border-radius: 12px;
+    z-index: 1;
+    font-weight: bold;
+    width: 100vh;
+
+    padding: .8rem 5%;
+    gap: 12px;
+
+
+
+
+
+
+}
+
+.container_login div h1 {
+    color: rgb(40, 40, 88);
+    font-size: 2.2rem;
+    font-weight: 600;
+   
+}
+
+
+.main_content {
+    margin-top: 2.5rem;
+
+
+    height: 60vh;
+
+
+}
+
+.f {
+    margin-left: 2px;
+}
+
+
+
+.f input {
+    height: 30px;
+    width: 26rem;
+}
+.f input:hover{
+    background-color: rgb(48, 48, 105);
+    color: aliceblue;
+}
+
+
+
+
+
+.bg_image {
+  
+    /* The image used */
+    background-image: url(contactupimage.jpg);
+
+   
+
+    /* Full height */
+   height: 100vh;
+ 
+   z-index: -1;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,98 @@
+<title>login/signup</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/account_open.css') }}">
+</head>
+
+<body>
+    <div>
+
+        {% include 'navbar.html'%}
+    </div>
+
+    {% block content%}
+
+    <div class="bg_image" style="background-image: url({{url_for('static',filename = '/image/loginandsignup.jpg')}});">
+    </div>
+
+
+
+    <div class="usercontainer">
+
+
+        <form action="/account_open" method="post">
+            <div class="header">
+
+                <h3>Create Account</h3>
+                <p style="color: yellow;">{{error}}</p>
+            </div>
+
+            <br>
+
+
+            <div class="mainiterms">
+                <div>
+
+                    <label for="username">username</label>
+                    <input type="text" placeholder="Username" id="username" name="username">
+                </div>
+                <div>
+
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Password" id="password" name="password">
+                </div>
+                <div>
+
+                    <label for="dob">date of birth</label>
+                    <input type="date" placeholder="date of birth" id="dob" name="dob" name="dob">
+                </div>
+
+
+                <div>
+
+                    <label for="email">email</label>
+                    <input type="text" placeholder="Email " id="email" name="email">
+                </div>
+                <div>
+                    <label for="contact no">contact no</label>
+                    <input type="number" placeholder="contact no " id="contact no" name="contact_no">
+                </div>
+                <div class="genderdiv">
+
+                    <select name="account_type" id="" class="selection">
+                        
+                        <option value="current">Current</option>
+                        <option value="Saving">Saving</option>
+                    </select>
+                </div>
+
+
+
+
+
+                <div class="genderdiv">
+
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="male" placeholder="gender" id="male" checked>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" value="female" id="female">
+
+                </div>
+          
+
+
+
+                <input type="submit" value="Create Account" class="button">
+                <div class="social">
+                    <div class="go"> Google</div>
+                    <div class="fb">Facebook</div>
+                </div>
+
+
+            </div>
+
+        </form>
+    </div>
+
+    {%endblock%}
+    
+</body>

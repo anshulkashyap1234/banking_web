@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="institute-1.1s-200px.png">
+    <title>contact us</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='/css/contact.css')}}">n
+</head>
+
+<body>
+    {%extends 'userpage.html'%}
+
+    {%block container%}
+    <div class="bg_image" style="background-image: url({{url_for('static',filename = '/image/contactupimage.jpg')}})">
+    </div>
+    <div class="section">
+
+
+
+        <div class="container_login">
+
+            <div>
+                <h1>CONTACT US ✉️</h1>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolores reiciendis cumque <br> optio
+                    placeat, recusandae harum autem quas illum veritatis eligendi reprehenderit <br>dolorum rerum
+                    numquam inventore? Tempore, a repellendus!</p>
+            </div>
+
+            <div class="main_content">
+
+                <div class="f">
+                    <p>
+                    <h1><i class="material-icons" style="font-size:48px;color:red"></i>☎️Toll-Free : 1800 425 3800, 1800
+                        425 2830
+                    </h1>
+                    </p>
+                    <p>
+                    <h1>📞Toll-No : 080-26599900</h1>
+                    </p>
+                    <p>
+                    <h1>🪙 Address : admin@123gmail.com</h1>
+                    </p>
+
+                    <textarea name="" id="" cols="50" rows="10" placeholder="enter your quarry here"></textarea>
+                    <br>
+                    <input type="button" value="submit">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    {%endblock%}
+</body>
+
+</html>

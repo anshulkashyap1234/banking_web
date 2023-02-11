@@ -1,0 +1,56 @@
+<title>login/signup</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/loginpage.css') }}">
+
+</head>
+
+<body>
+    <div>
+
+        {% include 'navbar.html'%}
+    </div>
+
+    {% block content%}
+
+    <div class="bg_image" style="background-image: url({{url_for('static',filename = '/image/loginandsignup.jpg')}});">
+    </div>
+
+
+
+    <div class="usercontainer">
+
+
+        <form action="/login" method="post">
+            <div class="header">
+
+                <h3>Login Page</h3>
+                <p style="color: rgb(135, 35, 22);">{{error}}</p>
+            </div>
+
+         
+
+
+            <div class="mainiterms">
+                <div>
+
+                    <label for="account_no">account_no</label>
+                    <input type="number" placeholder="account_no" id="account_no" name="account_no">
+                </div>
+                <div>
+
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Password" id="password" name="password">
+                </div>
+               
+                <input type="submit" value="Submit" class="button">
+                <a href="/create_account" class="create_account">I D'not Have Any Account</a>
+
+
+            </div>
+
+        </form>
+    </div>
+
+    {%endblock%}
+    
+</body>

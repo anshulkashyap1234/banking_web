@@ -1,0 +1,144 @@
+<title>update paga</title>
+
+<style>
+    .button {
+
+        width: 15%;
+        height: 20px;
+        background-color: rgba(152, 167, 186, 0.516);
+        color: #080710;
+        padding: 15px 0;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 5px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: rgb(32, 76, 194);
+
+
+        position: absolute;
+        bottom: 20%;
+
+
+    }
+
+    .button:hover {
+        color: #e8ecf3;
+        background-color: rgb(6, 49, 109);
+        cursor: pointer;
+    }
+
+
+    .button a {
+        color: white;
+        text-decoration: none;
+
+    }
+
+
+
+    .mainitem h2 {
+        font-size: 18px;
+    }
+
+    .mainitem {
+        position: relative;
+        left: 0%;
+    }
+
+    .user_content {
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .user_content div {
+        display: flex;
+        flex-direction: column;
+       margin-left: 160px;
+       margin-right: 160px;
+    }
+</style>
+</head>
+
+<body>
+    <div>
+
+        {% extends 'userpage.html'%}
+    </div>
+
+    {% block content%}
+
+
+    <div class="projects-section-header">
+
+
+        <h2>welcome🙏 <span class="name_user" name="user_name">{{username}} </span> this is updata details page
+        </h2>
+
+
+    </div>
+    <h3>Updated Profile</h3>
+
+    <div class="project-boxes jsGridViewofprograms" id="load_home">
+
+
+
+        <div class="user_content">
+
+
+
+
+
+            <div class="mainitem">
+                <h2>account no :-{{account_no}} </h2>
+
+                <h2>username :- {{username}}</h2>
+
+                <h2>password :-{{password}} </h2>
+
+
+                <h2>email id :-{{email}} </h2>
+
+                <h2>contact :- {{contact}}</h2>
+
+                <h2>gender :- {{gender}}</h2>
+            </div>
+            <div class="mainitem">
+
+
+                <h2>dob :- {{dob}}</h2>
+
+                <h2>account_type :- {{account_type}}</h2>
+
+                <h2>account_bal :- {{account_bal}}</h2>
+
+
+
+
+
+            </div>
+        </div>
+      
+        <div class="button" style="right: 20%;">
+
+            <a href="{{url_for('update_profile')}}" download="{{account_no,username}}">
+                download
+
+            </a>
+
+
+        </div>
+
+
+
+
+
+
+
+        {%endblock%}
+
+</body>

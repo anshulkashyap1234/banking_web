@@ -1,0 +1,13 @@
+
+            **********sbi bank***************
+            account_no->2
+            username->rekha
+            password->rrr
+            email->shalu@gmail.com
+            contact->8864981381
+            dob->2023-01-03
+            gender->female
+            account_type->Saving
+            account_bal->2000
+            ********************************
+            

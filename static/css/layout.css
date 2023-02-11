@@ -1,0 +1,242 @@
+
+ 
+ body{
+    width: 100%;  
+    height: 100vh;   
+}
+
+.container
+{     margin-top: 3.5%;
+      width: 100%;  
+      height: 100vh;  
+   
+      font-size: 182.5%;
+     
+}  
+
+
+ 
+ .app-container {  
+      width: 100%;  
+      display: flex;  
+      flex-direction: column;  
+      height: 100%;  
+        
+      transition: 0.2s;  
+      max-width: 1800px;  
+      z-index: 2;
+position: fixed;
+top: 10%;
+     }  
+     
+     .app-content {  
+      display: flex;  
+      height: 100%;  
+      overflow: hidden;  
+      padding: 16px 24px 24px 0;  
+}  
+ .app-header {  
+      display: flex;  
+      justify-content: space-between;  
+      align-items: center;  
+      width: 100%;  
+      padding: 16px 24px;  
+      position: relative;  
+}  
+
+ .app-sidebar {  
+      padding: 40px 16px;
+      display: flex;  
+      flex-direction: column;
+      list-style: none;  
+      align-items: center;  
+      gap: 3rem;  
+      margin-top: 40px;
+}  
+
+
+
+
+.app-sidebar a {
+    display: flex;
+    justify-content: center;
+    font-size: 2.1rem;
+   
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  
+    width: 22rem;
+    border-radius: 8px;
+    
+    color: rgb(0, 0, 0);
+    background-color: rgba(38, 104, 146, 0.13);
+    
+    
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 12px rgba(8, 7, 16, 0.6);
+    
+}
+
+.app-sidebar a.active,
+.app-sidebar a:hover {
+    color: white;
+
+    background-color: #4787e9;
+    box-shadow: 0px 10px 20px 0px rgb(49, 107, 206);
+   
+}
+.active{
+color: #011aff;
+    border-bottom: 0.2rem solid #011aff;
+}
+ .projects-section {  
+      flex: 2;  
+      margin-top: 30px;
+    
+      border-radius: 32px;  
+      padding: 32px 32px 0 32px;  
+      overflow: hidden;  
+      height: 80%;  
+      display: flex;  
+      flex-direction: column;  
+    
+     
+      align-items: center;
+      background-color: rgba(38, 104, 146, 0.13);
+    
+    
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 6px 8px 40px rgba(8, 7, 16, 0.6);
+}  
+ 
+ .projects-status {  
+      display: flex;  
+}  
+ .item-status {  
+      display: flex;  
+      flex-direction: column;  
+      margin-right: 16px;  
+}  
+
+ .status-number {  
+      font-size: 24px;  
+      line-height: 32px;  
+      font-weight: 700;  
+      color: var(--main-color);  
+}  
+ .status-type {  
+      position: relative;  
+      padding-right: 24px;  
+      color: var(--secondary-color);  
+}  
+ 
+
+.name_user{
+     color: #011aff;
+}
+
+
+.containers{
+
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.containers .card{
+    
+    position: relative;
+    cursor: pointer;
+}
+
+.containers .card .face{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.containers .card .face.face1{
+    position: relative;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.containers .card:hover .face.face1{
+   
+    transform: translateY(0);
+}
+
+.containers .card .face.face1 .content{
+   
+    opacity: .1;
+    transition: 0.5s;
+}
+
+.containers .card:hover .face.face1 .content{
+  
+    opacity: 1;
+}
+
+
+
+.containers .card .face.face1 .content img{
+   width: 230px;
+   opacity:1;
+   border-radius: 20px;
+}
+
+.containers .card .face.face2{
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+    
+    border-radius: 20px;
+}
+
+.containers .card:hover .face.face2{
+    transform: translateY(0);
+    color: white;
+
+background-color: #4787e9;
+box-shadow: 0px 10px 20px 0px rgb(49, 107, 206);
+}
+
+.containers .card .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.containers .card .face.face2 .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+    
+}
+
+.containers .card .face.face2 .content a:hover{
+    background: #333;
+    color: #fff;
+   
+
+box-shadow: 0px 10px 20px 0px rgb(49, 107, 206);
+}

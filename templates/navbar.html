@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{url_for('static',filename='/image/institute-1.1s-200px.png')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+    <title>{{page}}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
+</head>
+
+<body>
+    <header>
+        <a href="/" class="logo"><i  class="fas fa-university"></i>  bank of india </a>
+
+        <nav class="navbar">
+
+            <a href="/home" class="active" target="_parent">Home</a>
+            <a href="/loginpage"  target="_self">LogIn</a>
+            <a href="/create_account"  target="_self">Create_account</a>
+            <a href="/services" target="_self">Services</a>
+            <a href="/contact" target="_self">Contact Us</a>
+            <a href="/help" target="_self">Help</a>
+            <span id="google_translate_element" class="translater"></span>
+
+        </nav>
+
+    </header>
+ <div>
+    {% block content%}
+
+
+    {%endblock%}
+
+ </div>
+ <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {pageLanguage: 'en'},
+            'google_translate_element'
+        );
+    }
+</script>
+
+<script type="text/javascript"
+        src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+</script>
+
+</body>
+
+</html>

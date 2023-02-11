@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+.home {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    align-items: center;
+
+}
+.home .content {
+    flex: 1 1 40rem;
+    padding-top: 1rem;
+    z-index: 1;
+    margin-left: 2rem;
+
+}
+
+.home .image {
+    flex: 1 1 40rem;
+    z-index: 1;
+}
+
+.home .image img {
+    width: 90%;
+    margin-left: 3rem;
+
+}
+
+
+
+
+.home .content h2 {
+    font-size: 2.7rem;
+    font-weight: 800;
+    color: #002057;
+}
+
+
+
+.home .content p {
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 600;
+    padding: 1rem 0;
+}
+
+.home .content p span {
+font-size: 1.5rem;
+    color: rgb(148, 8, 8);
+
+    padding: 1rem 0;
+}
+
+.home .btn1 {
+    margin-top: 1rem;
+    position: absolute;
+    line-height: 0;
+    padding: 1.6rem 3rem;
+    border-radius: 4em;
+
+    color: #fff;
+    background: #2506ad;
+
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+}
+
+
+
+.home .btn1 i {
+    margin-left: 0.3rem;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.home .btn1:hover {
+    background: #04477e;
+}
+
+
