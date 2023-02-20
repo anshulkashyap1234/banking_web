@@ -186,7 +186,7 @@ def otp():
             ********************************
             """)
             f.close()
-            dir ="D:/bank"
+            dir ="banking_web"
             os.chdir(dir)
             # opening file.txt which is to read
         
