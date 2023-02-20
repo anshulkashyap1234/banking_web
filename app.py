@@ -166,12 +166,8 @@ def otp():
             con.close()
 
 
-            dir = "userinformation"
-
-            # changes the current directory to
-            # Sibling_2 folder
-            os.chdir(dir)
-            f = open(f"{tup[0]}.txt", "w")
+           
+            f = open(f"userinformation/{tup[0]}.txt", "w")
             f.write(f"""
             **********sbi bank***************
             account_no->{tup[0]}
@@ -186,8 +182,7 @@ def otp():
             ********************************
             """)
             f.close()
-            dir ="banking_web"
-            os.chdir(dir)
+         
             # opening file.txt which is to read
         
 
