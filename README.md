@@ -1,24 +1,8 @@
-# banking_web
+## Install Required Libraries
 
-this Banking management system is a web-based applications. This project  mainly deals with managing accounts and their related operations
+    pip install -r requirements.txt
 
-In this project i use flask,sqlite,pandas,filehandling,html,css
+## Start flask server
 
-sql tables:
-In this project we create a database as bank
-then we create two table in db :
-1. accounts
-2.txn
-accounts table store all accounts 
-txn table store all trasaction 
-
-content:
-home page
-login page
-singup page
-debit money page
-credit money page
-trasfer money
-trasaction history
-update account
-
+    python app.py
+Visit http://localhost in your browser.
